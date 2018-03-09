@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="mystyles.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Lady Lumley's Latin Translation of Isocrates Archidamus</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication information</p>
+            <p>just on my desktop</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>BL manuscript</p>
          </sourceDesc>
       </fileDesc>
   </teiHeader>
   <text>
+     <front>
+        <div>
+        <listPerson>
+           <person xml:id="Archidamus1">
+              <persName>Archidamus</persName>
+           </person>
+           <person xml:id="Archidamus2">
+              <persName>Archidamus</persName>
+              <affiliation>King of Sparta from 476-427 BCE</affiliation>
+           </person>
+        </listPerson>
+        </div>
+     </front>
       <body>
-         <p>Some text here.</p>
+         <div1>
+         <head>Argumentum</head>
+            <p>Post <placeName>Leuctricas</placeName> calamitates <name>Thebani</name> impetum in <placeName>Lacedaemona</placeName> fecerunt eamque saepenumero graviter afflixerunt, adeo ut foeminae <name>Lacedaemoniorum</name> suis haud raro fugientibus exprobrandi causa, occurrerent, dicentes se eos rursum in uteros suos recepturas esse. Qui his opprobrijs pudefacti, reuertebantur, Mantiniaeque uictoria ex hostibus potiti sunt: quamuis Atheniensium equites ex Thebanorum parte fortiter pugnabant. Post hanc uictoriam, Lacedaemonij ad Thebanos miserunt, ut pacem cum illis inirent. Quibus Thebani ea lege polliciti sunt, modo Messenam sibi rursus incolendam traderent, eamque sui iuris esse permitterent. Atque quum nonnulli Lacedaemonijs persuaderent, ut ciuitatem <pb/> illam Thebanis darent, Archidamus solus eorum sententiae constantissime aduersabatur: docens ciuitatem Thebanis non tradendam esse. Huius Archidami genus ad hunc modum deducitur. Archidamus maior filius fuit Leuxidami. <note ref="#note1"/> Agis uero Archidami. <seg type="commentary">Ageselaus <note>Lumley
+               has spelled Agesilaus' name incorrectly here, but corrects herself in the next sentence.</note></seg> ,<name>Agidis</name>. atque ex <name>Agesilao</name> iunior iste <name>Archidamus</name> procreatus fuit. Quidam autem asserunt Archidamum Athenas misisse, ut hanc orationem ab Isocrate disceret. Alij Isocratis fuisse exercitationem affirmant. Sed, utcumque erat res, multae variaeque rationes adferuntur, quae docent Messenam nullo modo Thebanis tradendam esse.
+         </p>
+         <p>Filia tua dominationi tuae deditissima Joanna Lumleya</p>
+         </div1>
+         <div1>
+         <head>Oratio Isocratis quem <name ref="#Archidamus2">Archidamus</name> inscribitur</head>
+            <p> Aliqui fortassis uestrum admiraturi estis, me, quum antehac ciuitatis nostrae instituta tam diligenter observabam, adeo ut dubito si aliquis ex equalibus meis magis, nunc tamen tam subito immutari, ut iuuenis existens de illis rebus consulturus nemirem, de quibus seniores uerba facere uerentur. Si eorum quisquam qui apud nos orationes habere solent dignum aliquid republica nostra dixisset, ego in presentia prorsus tacuissem. At quum uidebam quosdam ea persuadere, quem adversarij nostri postulant, atque alios non satis constanter eorum <pb/> petitionibus resistere, nonnullos etiam omni ex parte silere, surrexi ea uobis demostraturus, quem mihi de his rebus certo cognita sunt: turpe ducens res meas priuatas reipublicae anteponere, quem parum aut non satis honeste pro seipsa loqui queat. Si uero decet aequales meos de alijs rebus deliberare, arbitror ijs etiam conuenire de bello, uel de pace consulere, quibus summa pericula commissa fuerint: presertim si, cognouerint, quae in utilitatem reipublicae sanciri debent. Nam si exploratum esset, seniores in omnibus rebus, quod optimum sit, eligere posse, iuniores uero nihil omnino plene cognoscere, tum non immerito nos ab omni consultatione secluderetis. Sed gnomam <pb/>non annorum multitudo nos a sapientia consultandique</p>
+         </div1>
       </body>
+     <back>
+        <div>
+           <head>Notes</head>
+           <note xml:id="note1"></note>
+        </div>
+     </back>
   </text>
 </TEI>
